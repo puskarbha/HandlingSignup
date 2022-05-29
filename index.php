@@ -36,6 +36,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 }
 else{
   echo"<h1>password doesnot match</h1>";
+  exit();
 }
   }
    
