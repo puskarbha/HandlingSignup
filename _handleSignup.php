@@ -21,11 +21,7 @@ $showError="false";
             $sql = "INSERT INTO `users` (`user_email`, `user_pass`, `timestamp`) VALUES ('$user_email', '$hash', current_timestamp())";
             $result = mysqli_query($conn,$sql);
             
-            if($result){
-                $showAlert = true;
-           header("Location:/forum/index.php?signupsuccess=true");
-           exit();
-            }
+            
          }
          else{
             $showError = "Passwords do not match";
