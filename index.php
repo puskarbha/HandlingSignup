@@ -22,6 +22,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
    $name=$_POST['f_name'];
    $password=$_POST['f_pass'];
   $cpassword=$_POST['f_cpass'];
+  //Firstly check whether two passwords matches
   if($password==$cpassword)
   {
             //converting password into hash form
